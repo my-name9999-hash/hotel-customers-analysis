@@ -54,7 +54,7 @@ section = st.sidebar.radio(
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_csv("hotels_customers_cleaned.csv")
+        df = pd.read_csv(r"C:\Users\Esraa\Downloads\hotel-streamlit\hotels_customers_cleaned.csv")
         return df
     except:
         st.error("Please make sure 'hotels_customers_cleaned.csv' is in the same directory")
@@ -335,7 +335,8 @@ elif section == "About":
     
     st.subheader("🔗 Program Resources")
     st.write("""
-    - **Main Epsilon Repository:** [https://github.com/epsilon-ai](https://github.com/epsilon-ai)
+    - **Main Epsilon Repository:** https://github.com/my-name9999-hash/hotel-customers-analysis
+    - **Streamlit Publish:** https://hotel-customers-analysis-yfmyskuibdxpqtxzw389i4.streamlit.app/
     - **Program Focus:** Data Science, Machine Learning, AI Applications
     - **Project Type:** Mid-Project Assessment
     """)
